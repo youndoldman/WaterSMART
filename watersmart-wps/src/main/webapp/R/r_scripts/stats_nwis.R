@@ -13,10 +13,10 @@ library(NWCCompare)
 #stats<-"rateStat,magnifSeven,magStat,flowStat,durStat,timStat"
 ## end inputs ##
 
-nwisDvUrl <- "http://waterservices.usgs.gov/nwis/dv/?format=waterml,1.1&sites="
+nwisDvUrl <- "https://waterservices.usgs.gov/nwis/dv/?format=waterml,1.1&sites="
 offering <- "00003"
 property <- "00060"
-drainage_url <- "http://waterservices.usgs.gov/nwis/site/?siteOutput=Expanded&site="
+drainage_url <- "https://waterservices.usgs.gov/nwis/site/?siteOutput=Expanded&site="
 
 sites<-read.csv(header=F,colClasses=c("character"),text=sites)
 x_urls<-paste(nwisDvUrl, sites, "&startDT=", startdate, "&endDT=", enddate, "&statCd=", offering, "&parameterCd=", property, sep = "")
