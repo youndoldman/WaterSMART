@@ -10,10 +10,10 @@ library(NWCCompare)
 #model_url="http://cida.usgs.gov/nwc/thredds/sos/watersmart/stats/stats-SE-DENSE2-2.03.nc?request=GetObservation&service=SOS&version=1.0.0&offering"
 ## end inputs ##
 
-nwisDvUrl <- "http://waterservices.usgs.gov/nwis/dv/?format=waterml,1.1&sites="
+nwisDvUrl <- "https://waterservices.usgs.gov/nwis/dv/?format=waterml,1.1&sites="
 offering <- "00003"
 property <- "00060"
-drainage_url <- "http://waterservices.usgs.gov/nwis/site/?siteOutput=Expanded&site="
+drainage_url <- "https://waterservices.usgs.gov/nwis/site/?siteOutput=Expanded&site="
 scenario_url <- paste(substr(model_url,1,regexpr("Get",model_url)-1),"GetCapabilities&service=SOS&version=1.0.0",sep="")
 
 getcap<-getScenarioSites(scenario_url)
