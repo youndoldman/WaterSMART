@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>gov.usgs.cida.watersmart</groupId>
     <artifactId>watersmart</artifactId>
-    <version>20-SNAPSHOT</version>
+    <version>19-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>WaterSMART Parent Project</name>
   
@@ -375,11 +375,6 @@
                         <target>1.6</target>
                     </configuration>
                 </plugin>
-                <plugin>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-javadoc-plugin</artifactId>
-			<version>2.9.1</version>
-		</plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-war-plugin</artifactId>
